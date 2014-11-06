@@ -21,7 +21,7 @@ Move hook dir to User home git-templates.
 Example:
 ```
 mkdir -p ~/.git-templates
-cp hooks ~/.git-templates/
+cp -r hooks ~/.git-templates/
 git config --global init.templatedir ~/.git-templates/
 ```
 
