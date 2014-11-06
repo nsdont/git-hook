@@ -4,9 +4,14 @@ git-hook
 flake8, ctags
 
 ### How to use
-#### Step 1 
+#### Step 0
+Install Flake8
+```
+pip install flake8
+```
+
+#### Step 1
 Move config dir to User home dir.
-Example:
 ```
 cp -r config ~/.config
 ```
@@ -15,8 +20,9 @@ cp -r config ~/.config
 Move hook dir to User home git-templates.
 Example:
 ```
-mkdir -p .git-templates
-cp hook ~/.git-templates/
+mkdir -p ~/.git-templates
+cp hooks ~/.git-templates/
+git config --global init.templatedir ~/.git-templates/
 ```
 
 #### Step 3
